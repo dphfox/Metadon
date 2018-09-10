@@ -1,0 +1,306 @@
+* {
+	/* Reset rules */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 0.9em;
+	--accent-colour: #56a7e1;
+}
+
+body {
+	/* Basic styling */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 400;
+
+	background-color: #d5d9e6;
+	width: 100%;
+	color: #55555e;
+}
+
+
+/*
+ * Site Navigation
+ */
+
+
+#site-nav {
+	/* The navigation bar at the top of the window. */
+	/* Changes to a split topbar / tab bar on mobile. */
+
+	/* Layout */
+	position: fixed;
+	top: 10px;
+	display: flex;
+	align-items: stretch;
+	justify-content: left;
+
+	width: 100%;
+	max-width: 1200px;
+	margin-left: calc(50% - 600px);
+	height: 48px;
+	z-index: 9999;
+	
+	/* Appearance */
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 -15px 0 #d5d9e6;
+
+}
+
+
+/*
+ * Site Navigation > Tabs
+ */
+
+
+#site-nav > .nav-tabs {
+	/* The tabs to the left of the navigation bar */
+	/* Transforms into a tab bar on mobile. */
+
+	/* Layout */
+	display: flex;
+	align-items: stretch;
+	justify-content: left;
+
+	margin-right: auto;
+
+	/* Appearance */
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	overflow: hidden;
+}
+
+#site-nav > .nav-tabs > .nav-tab {
+	/* An individual tab in the navigation tabs. */
+
+	/* Layout */
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	
+	padding: 0 15px;
+
+	/* Appearance */
+	color: inherit;
+	text-decoration: none;
+	overflow: hidden;
+
+	border-bottom: 0px solid var(--accent-colour);
+	padding-top: 0px;
+	transition: background-color 0.1s ease;
+}
+
+#site-nav > .nav-tabs > .nav-tab:hover {
+	/* Appearance */
+	background-color: #eff1fa;
+}
+
+#site-nav > .nav-tabs > .nav-tab.tab-active {
+	/* Appearance */
+	color: var(--accent-colour);
+}
+
+#site-nav > .nav-tabs > .nav-tab > .tab-icon {
+	/* The icon inside the navigation tabs. */
+
+	/* Layout */
+	display: inline-block;
+}
+
+#site-nav > .nav-tabs > .nav-tab > .tab-label {
+	/* The label inside the navigation tabs. */
+
+	/* Layout */
+	display: block;
+	margin-left: 8px;
+
+	/* Appearance */
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+
+/*
+ * Site Navigation > Quick Access
+ */
+
+
+#site-nav > .quick-access {
+	/* The quick access to the right of the navigation bar */
+	/* Transforms into a top bar on mobile. */
+
+	/* Layout */
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	flex-shrink: 0;
+	flex-grow: 1;
+
+}
+
+#site-nav > .quick-access > .search-box {
+	/* The search box to the right of the navigation bar */
+
+	/* Layout */
+	display: block;
+	flex-basis: 225px;
+	flex-grow: 1;
+
+	max-width: 300px;
+	height: 32px;
+
+	margin-right: 8px;
+	padding: 0 12px;
+
+	/* Appearance */
+	color: inherit;
+	background-color: #eff1fa;
+
+	border: 0;
+	border-radius: 16px;
+
+	font: inherit;
+	font-size: 1rem;
+
+}
+
+#site-nav > .quick-access > .search-box::placeholder {
+	/* The search box placeholder text */
+	color: #848fa0;
+}
+
+#site-nav > .quick-access > .profile {
+	/* The profile link to the right of the navigation bar */
+
+	/* Layout */
+	display: block;
+	width: 32px;
+	height: 32px;
+
+	margin-right: 8px;
+
+}
+
+#site-nav > .quick-access > .profile > .avatar {
+	/* The avatar in the profile link. */
+
+	/* Layout */
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	/* Appearance */
+	object-fit: cover;
+	border-radius: 10%;
+	transition: opacity 0.1s ease;
+}
+
+#site-nav > .quick-access > .profile:hover > .avatar {
+	/* The avatar in the profile link. */
+
+	/* Appearance */
+	opacity: 0.8;
+
+}
+
+
+/*
+ * Main Content
+ */
+
+
+#site-main {
+	/* The main container for the site sections. */
+
+	/* Layout */
+	display: flex;
+	align-items: top;
+	justify-content: left;
+	flex-wrap: nowrap;
+
+	width: 100%;
+	max-width: 1200px;
+	margin: 0px auto;
+	margin-top: 68px;
+	margin-bottom: 1000px;
+
+}
+
+#site-main > section {
+	/* A section of the main content. */
+
+	/* Layout */
+	display: block;
+	flex-shrink: 0;
+	flex-basis: 300px;
+	flex-grow: 0;
+	
+	position: sticky;
+	top: 68px;
+	height: 500px;
+
+	/* Appearance */
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/*
+ * Main Content > Feed Section
+ */
+
+
+#site-main > .feed-section {
+	/* The feed section of the main content. */
+
+	/* Layout */
+	flex-grow: 1;
+	height: 5000px;
+	margin: 0 10px;
+
+}
+
+#site-main > .feed-section > .new-toot {
+	/* The new toot box at the top of the feed. */
+
+	/* Layout */
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+
+	/* Appearance */
+	background-color: #eff1fa;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+
+#site-main > .feed-section > .new-toot > .toot-area {
+	/* The text area in the new toot box. */
+
+	/* Layout */
+	display: block;
+	width: 100%;
+	height: auto;
+	min-height: 50px;
+	padding: 4px;
+
+	/* Appearance */
+	background-color: #ffffff;
+	font: inherit;
+	color: inherit;
+	border: 1px solid #d5d9e6;
+	resize: none;
+
+}
+
+#site-main > .feed-section > .new-toot > .toot-area ::placeholder {
+	/* The new toot box placeholder text */
+	color: #848fa0;
+}

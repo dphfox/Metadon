@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg889"
+   version="1.1"
+   viewBox="0 0 16 16"
+   height="16"
+   width="16">
+  <defs
+     id="defs883" />
+  <metadata
+     id="metadata886">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="opacity:1"
+     transform="matrix(3.7795335,0,0,3.7795335,30.000041,-1131.5214)"
+     id="g2139">
+    <g
+       style="opacity:1"
+       transform="matrix(0.99927756,0,0,0.99927756,-12.165103,6.8287564)"
+       id="g2116" />
+    <g
+       style="opacity:1"
+       transform="matrix(1.0003135,0,0,1.0003135,-0.78883659,8.7755168)"
+       id="g2130" />
+    <path
+       id="path986"
+       d="m -5.820835,299.37989 a 2.11733,2.11733 0 0 0 -2.1173306,2.11734 2.11733,2.11733 0 0 0 2.1173306,2.11733 2.11733,2.11733 0 0 0 2.1173304,-2.11733 2.11733,2.11733 0 0 0 -2.1173304,-2.11734 z m -0.529333,1.32334 a 0.26466623,0.26467057 0 0 1 0.264666,0.26466 0.26466623,0.26467057 0 0 1 -0.264666,0.26467 0.26466623,0.26467057 0 0 1 -0.264666,-0.26467 0.26466623,0.26467057 0 0 1 0.264666,-0.26466 z m 1.0586648,0 a 0.26466631,0.26467057 0 0 1 0.264667,0.26466 0.26466631,0.26467057 0 0 1 -0.264667,0.26467 0.26466631,0.26467057 0 0 1 -0.264666,-0.26467 0.26466631,0.26467057 0 0 1 0.264666,-0.26466 z m 0.2217615,1.02971 a 0.26469275,0.26469275 0 0 1 0.1850598,0.45749 c -0.2481007,0.24809 -0.5847689,0.38873 -0.9356369,0.38873 -0.3508671,0 -0.6875356,-0.14064 -0.9356363,-0.38873 a 0.26469275,0.26469275 0 0 1 0.1581796,-0.45335 0.26469275,0.26469275 0 0 1 0.2150413,0.0801 c 0.1489758,0.14897 0.3517323,0.23261 0.5624154,0.23261 0.210684,0 0.41189,-0.0836 0.5608656,-0.23261 a 0.26469275,0.26469275 0 0 1 0.1897115,-0.0842 z"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.52933252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
