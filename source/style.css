@@ -396,11 +396,11 @@ body {
 }
 
 /*
- * Breakpoint 4: 520px
- * The site navigation no longer has any space for a complete top bar.
+ * Breakpoint 4: 600px
+ * The page no longer has enough space for a complete feed.
  * This is the mobile breakpoint.
  */
- @media screen and (max-width: 520px) {
+ @media screen and (max-width: 600px) {
 	#site-nav {
 		/* Layout */
 		position: fixed;
