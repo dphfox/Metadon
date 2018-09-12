@@ -480,4 +480,9 @@ body {
 		box-shadow: none;
 	}
 
+	#site-main > .feed-section {
+		max-width: none;
+		width: 100%;
+	}
+
 }
