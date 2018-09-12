@@ -33,13 +33,13 @@ body {
 	/* Layout */
 	position: fixed;
 	top: 10px;
+	left: calc(50% - 600px);
 	display: flex;
 	align-items: stretch;
 	justify-content: left;
 
-	width: 100%;
+	width: calc(100% - 20px);
 	max-width: 1200px;
-	margin-left: calc(50% - 600px);
 	height: 48px;
 	z-index: 9999;
 	
@@ -48,6 +48,10 @@ body {
 	border-radius: 5px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 -15px 0 #d5d9e6;
 
+}
+
+#site-nav * {
+	flex-shrink: 0;
 }
 
 
@@ -134,6 +138,7 @@ body {
 
 	/* Layout */
 	display: flex;
+	margin-left: 50px;
 	align-items: center;
 	justify-content: right;
 	flex-shrink: 0;
@@ -221,7 +226,7 @@ body {
 	justify-content: left;
 	flex-wrap: nowrap;
 
-	width: 100%;
+	width: calc(100% - 20px);
 	max-width: 1200px;
 	margin: 0px auto;
 	margin-top: 68px;
@@ -259,7 +264,7 @@ body {
 	/* The feed section of the main content. */
 
 	/* Layout */
-	flex-grow: 1;
+	flex-basis: 580px;
 	height: 5000px;
 	margin: 0 10px;
 
@@ -303,4 +308,175 @@ body {
 #site-main > .feed-section > .new-toot > .toot-area ::placeholder {
 	/* The new toot box placeholder text */
 	color: #848fa0;
+}
+
+
+/*
+ *
+ *
+ * ===================================
+ *             MEDIA RULES            
+ * ===================================
+ *
+ *
+ */
+
+/*
+ * Breakpoint 1: 1220px
+ * The page no longer has any free space to the left and right.
+ */
+@media screen and (max-width: 1220px) {
+	#site-nav {
+		/* The navigation bar at the top of the window. */
+		/* Changes to a split topbar / tab bar on mobile. */
+	
+		/* Layout */
+		left: 10px;
+	
+	}
+
+	#site-main > .about-section {
+		/* The about section of the main content. */
+	
+		/* Layout */
+		display: none;
+	
+	}
+
+	#site-main > .me-section {
+		/* The 'me' section of the main content. */
+	
+		/* Layout */
+		margin-left: auto;
+	
+	}
+
+	#site-main > .feed-section {
+		/* The feed section of the main content. */
+
+		/* Layout */
+		margin-right: auto;
+	}
+}
+
+/*
+ * Breakpoint 2: 910px
+ * The page no longer has any space for two sections.
+ */
+ @media screen and (max-width: 910px) {
+	#site-main > .me-section {
+		/* The 'me' section of the main content. */
+	
+		/* Layout */
+		display: none;
+	
+	}
+
+	#site-main > .feed-section {
+		/* The feed section of the main content. */
+
+		/* Layout */
+		margin-left: auto;
+		margin-right: auto;
+
+		flex-basis: auto;
+		width: 100%;
+		max-width: 580px;
+	}
+}
+
+/*
+ * Breakpoint 3: 800px
+ * The site navigation no longer has any space for labels.
+ */
+ @media screen and (max-width: 800px) {
+	#site-nav > .nav-tabs > .nav-tab > .tab-label {
+		display: none;
+	}
+}
+
+/*
+ * Breakpoint 4: 520px
+ * The site navigation no longer has any space for a complete top bar.
+ * This is the mobile breakpoint.
+ */
+ @media screen and (max-width: 520px) {
+	#site-nav {
+		/* Layout */
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 48px;
+		
+		/* Appearance */
+		background-color: #ffffff;
+		border-radius: 0;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	}
+
+	#site-nav > .nav-tabs {
+		/* Layout */
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100vw;
+		height: 48px;
+		justify-content: stretch;
+		
+		/* Appearance */
+		background-color: #ffffff;
+		border-radius: 0;
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+	}
+
+	#site-nav > .nav-tabs > .nav-tab {
+		/* An individual tab in the navigation tabs. */
+	
+		/* Layout */
+		width: auto;
+		flex-grow: 1;
+		flex-shrink: 1;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	#site-nav > .quick-access {
+		/* The quick access to the right of the navigation bar */
+		/* Transforms into a top bar on mobile. */
+	
+		/* Layout */
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	
+	}
+
+	#site-nav > .quick-access > .search-box {
+		/* The search box to the right of the navigation bar */
+	
+		/* Layout */
+		max-width: none;
+		margin-left: 8px;
+	
+	}
+
+	#site-main {
+		/* Layout */
+		margin-top: 48px;
+		margin-left: 0;
+		margin-right: 0;
+		max-width: none;
+		width: 100%;
+	}
+
+	#site-main > section {
+		border-radius: 0;
+		box-shadow: none;
+	}
+
 }
