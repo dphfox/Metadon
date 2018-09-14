@@ -1,0 +1,17 @@
+:root {
+	--accent-colour: #56a7e1;
+
+	--page-background-colour: #d5d9e6;
+	--page-text-colour: #55555e;
+
+	--nav-background-colour: #ffffff;
+	--nav-bg-hover-colour: #eff1fa;
+	--nav-search-bg-colour: #eff1fa;
+	--nav-search-placeholder-colour: #848fa0;
+
+	--section-background-colour: #ffffff;
+	--section-new-toot-bg-colour: #eff1fa;
+	--section-toot-area-bg-colour: #ffffff;
+	--section-toot-area-placeholder-colour: #848fa0;
+	--section-toot-ctrl-bg-colour: #d5d9e6;
+}

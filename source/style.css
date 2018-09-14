@@ -17,21 +17,6 @@ body {
 
 :root {
 	font-size: 0.9em;
-	--accent-colour: #56a7e1;
-
-	--page-background-colour: #d5d9e6;
-	--page-text-colour: #55555e;
-
-	--nav-background-colour: #ffffff;
-	--nav-bg-hover-colour: #eff1fa;
-	--nav-search-bg-colour: #eff1fa;
-	--nav-search-placeholder-colour: #848fa0;
-
-	--section-background-colour: #ffffff;
-	--section-new-toot-bg-colour: #eff1fa;
-	--section-toot-area-bg-colour: #ffffff;
-	--section-toot-area-placeholder-colour: #848fa0;
-	--section-toot-ctrl-bg-colour: #d5d9e6;
 }
 
 /*
@@ -397,7 +382,7 @@ body {
 
 /*
  * Breakpoint 1: 1220px
- * The page no longer has any free space to the left and right.
+ * Two-column view.
  */
 @media screen and (max-width: 1220px) {
 	#site-nav {
@@ -435,7 +420,7 @@ body {
 
 /*
  * Breakpoint 2: 910px
- * The page no longer has any space for two sections.
+ * Single-column view, no navigation labels.
  */
  @media screen and (max-width: 910px) {
 	#site-main > .me-section {
@@ -457,24 +442,17 @@ body {
 		width: 100%;
 		max-width: 580px;
 	}
-}
 
-/*
- * Breakpoint 3: 800px
- * The site navigation no longer has any space for labels.
- */
- @media screen and (max-width: 800px) {
 	#site-nav > .nav-tabs > .nav-tab > .tab-label {
 		display: none;
 	}
 }
 
 /*
- * Breakpoint 4: 600px
- * The page no longer has enough space for a complete feed.
- * This is the mobile breakpoint.
+ * Breakpoint 4: 750px
+ * Mobile breakpoint.
  */
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 750px) {
 	#site-nav {
 		/* Layout */
 		position: fixed;
