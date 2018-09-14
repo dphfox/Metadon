@@ -188,6 +188,7 @@ body {
 #site-nav > .quick-access > .search-box::placeholder {
 	/* The search box placeholder text */
 	color: var(--nav-search-placeholder-colour);
+	opacity: 1;
 }
 
 #site-nav > .quick-access > .profile {
@@ -319,9 +320,10 @@ body {
 
 }
 
-#site-main > .feed-section > .new-toot > .toot-area ::placeholder {
+#site-main > .feed-section > .new-toot > .toot-area::placeholder {
 	/* The new toot box placeholder text */
 	color: var(--section-toot-area-placeholder-colour);
+	opacity: 1;
 }
 
 #site-main > .feed-section > .new-toot > .toot-controls {
