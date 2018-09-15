@@ -263,7 +263,8 @@ body {
 	/* The feed section of the main content. */
 
 	/* Layout */
-	flex-basis: 580px;
+	width: 100%;
+	flex-grow: 1;
 	height: 5000px;
 	margin: 0 10px;
 
@@ -381,10 +382,9 @@ body {
  */
 
 /*
- * Breakpoint 1: 1220px
- * Two-column view.
+ * Navigation margin fix
  */
-@media screen and (max-width: 1220px) {
+ @media screen and (max-width: 1220px) {
 	#site-nav {
 		/* The navigation bar at the top of the window. */
 		/* Changes to a split topbar / tab bar on mobile. */
@@ -393,7 +393,13 @@ body {
 		left: 10px;
 	
 	}
+}
 
+/*
+ * Breakpoint 1: 1100px
+ * Two-column view.
+ */
+@media screen and (max-width: 1100px) {
 	#site-main > .about-section {
 		/* The about section of the main content. */
 	
@@ -419,10 +425,10 @@ body {
 }
 
 /*
- * Breakpoint 2: 910px
- * Single-column view, no navigation labels.
+ * Breakpoint 2: 800px
+ * Single-column view.
  */
- @media screen and (max-width: 910px) {
+ @media screen and (max-width: 850px) {
 	#site-main > .me-section {
 		/* The 'me' section of the main content. */
 	
@@ -437,10 +443,6 @@ body {
 		/* Layout */
 		margin-left: auto;
 		margin-right: auto;
-
-		flex-basis: auto;
-		width: 100%;
-		max-width: 580px;
 	}
 
 	#site-nav > .nav-tabs > .nav-tab > .tab-label {
